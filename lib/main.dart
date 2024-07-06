@@ -6,7 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart'
         GlobalWidgetsLocalizations;
 import 'package:flutter_quill/translations.dart' show FlutterQuillLocalizations;
 import 'package:flutter_quill_extensions/flutter_quill_extensions.dart';
-import 'screens/quill/quill_screen.dart';
+import 'screens/quill/Emplty_quill_screen.dart';
 
 
 void main() async {

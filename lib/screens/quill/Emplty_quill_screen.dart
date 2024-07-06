@@ -46,8 +46,8 @@ class _EmptyQuillScreenExampleState extends State<EmptyQuillScreenExample> {
         children: [
           if (!_isReadOnly)
       QuillToolbar.simple(
-    configurations: QuillSimpleToolbarConfigurations(
-    controller: _controller,
+        configurations: QuillSimpleToolbarConfigurations(
+          controller: _controller,
       showAlignmentButtons: true,
       multiRowsDisplay: true,
       showSearchButton: false,
@@ -58,7 +58,7 @@ class _EmptyQuillScreenExampleState extends State<EmptyQuillScreenExample> {
       showCodeBlock: false,
       showClearFormat: false,
       showQuote: false,
-      showFontFamily: false,
+      showFontFamily: true,
       showCenterAlignment: false,
       showJustifyAlignment: false,
       showLeftAlignment: false,
@@ -70,6 +70,7 @@ class _EmptyQuillScreenExampleState extends State<EmptyQuillScreenExample> {
       showListNumbers: false,
       showListBullets: false,
       showStrikeThrough: false,
+
       showInlineCode: false,
       fontFamilyValues: {
         'Amatic': GoogleFonts.amaticSc().fontFamily!,
