@@ -1,0 +1,64 @@
+name: example
+description: A demo for the Flutter Quill
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Flutter Quill Packages
+  flutter_quill: ^9.3.4
+  flutter_quill_extensions: ^9.3.4
+  google_fonts: ^6.2.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.8
+  flutter_gen_runner: ^5.4.0
+
+  # Freezed
+  freezed: ^2.4.7
+  # Json
+  json_serializable: ^6.7.1
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+  fonts:
+    - family: monospace
+      fonts:
+        - asset: assets/fonts/MonoSpace.ttf
+    - family: serif
+      fonts:
+        - asset: assets/fonts/Serif.ttf
+    - family: sans-serif
+      fonts:
+        - asset: assets/fonts/SansSerif.ttf
+    - family: ibarra-real-nova
+      fonts:
+          - asset: assets/fonts/IbarraRealNova-Regular.ttf
+    - family: square-peg
+      fonts:
+        - asset: assets/fonts/SquarePeg-Regular.ttf
+    - family: nunito
+      fonts:
+        - asset: assets/fonts/Nunito-Regular.ttf
+    - family: pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+    - family: roboto-mono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
+
+flutter_gen:
