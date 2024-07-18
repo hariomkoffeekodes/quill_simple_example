@@ -48,6 +48,20 @@ class _EmptyQuillScreenExampleState extends State<EmptyQuillScreenExample> {
       QuillToolbar.simple(
         configurations: QuillSimpleToolbarConfigurations(
           controller: _controller,
+      buttonOptions: const QuillSimpleToolbarButtonOptions(
+        base: QuillToolbarBaseButtonOptions(
+          iconTheme: QuillIconTheme(
+            iconButtonSelectedData: IconButtonData(
+              color: Colors.blue
+            ),
+            iconButtonUnselectedData: IconButtonData(
+              color: Colors.yellow
+            )
+          ),
+        ),
+        fontFamily: QuillToolbarFontFamilyButtonOptions(
+        )
+      ),
       showAlignmentButtons: true,
       multiRowsDisplay: true,
       showSearchButton: false,
@@ -70,7 +84,6 @@ class _EmptyQuillScreenExampleState extends State<EmptyQuillScreenExample> {
       showListNumbers: false,
       showListBullets: false,
       showStrikeThrough: false,
-
       showInlineCode: false,
       fontFamilyValues: {
         'Amatic': GoogleFonts.amaticSc().fontFamily!,
